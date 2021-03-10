@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "w n e k radio",
+      "invocationName": "w. n. e. k. radio",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -14,19 +14,6 @@
         {
           "name": "AMAZON.StopIntent",
           "samples": []
-        },
-        {
-          "name": "HelloWorldIntent",
-          "slots": [],
-          "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
-          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -48,17 +35,17 @@
           "name": "PlayRadioIntent",
           "slots": [],
           "samples": [
-            "play",
-            "play wnek radio",
-            "play wnek",
-            "play w n e k radio",
+            "play W N E K radio",
+            "play WNEK radio",
             "play w n e k",
-            "play radio"
+            "play wnek",
+            "play radio",
+            "play"
           ]
         }
       ],
       "types": []
     }
   },
-  "version": "8"
+  "version": "19"
 }

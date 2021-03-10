@@ -1,5 +1,35 @@
 {
   "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "WNEK \"The Voice\" is the non-commercial educational internet radio stream from Western New England University in Springfield, Massachusetts",
+          "examplePhrases": [
+            "Alexa, open W. N. E. K. radio",
+            ""
+          ],
+          "keywords": [
+            "WNEK",
+            "Western",
+            "New",
+            "England",
+            "radio"
+          ],
+          "name": "WNEK Radio",
+          "description": "WNEK The Voice is Western New England University\u0027s radio station and is a center of creativity and media production. \n\nWNEK provides a learning environment for students and individuals who are interested in broadcasting and media productions. \n\nWNEK The Voice is streaming 24 hours a day and almost always has live entertainment, with creative playlists and reruns of older broadcasts to fill out the day. It also hosts events such as the annual Halloween Monster Mash and Golden Voice Siging Competition, along with DJing events for other organizations on campus\n\n(Description from WNE Student Media Clubs and Organizations)",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "To test, simply say \"Alexa, open WNEK radio\". This will start the radio stream for the Western New England University student-run radio station called WNEK \"The Voice\"",
+      "category": "CHILDRENS_RADIO",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
     "apis": {
       "custom": {
         "endpoint": {
@@ -11,14 +41,14 @@
           }
         ],
         "regions": {
-          "NA": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:453853777796:function:0ffaae9d-0d5e-4ab2-a956-8876416899b4:Release_0"
-            }
-          },
           "EU": {
             "endpoint": {
               "uri": "arn:aws:lambda:eu-west-1:453853777796:function:0ffaae9d-0d5e-4ab2-a956-8876416899b4:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:453853777796:function:0ffaae9d-0d5e-4ab2-a956-8876416899b4:Release_0"
             }
           },
           "FE": {
@@ -32,36 +62,13 @@
     "manifestVersion": "1.0",
     "privacyAndCompliance": {
       "allowsPurchases": false,
-      "containsAds": false,
-      "isChildDirected": false,
-      "isExportCompliant": true,
       "locales": {
         "en-US": {}
       },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
       "usesPersonalInfo": false
-    },
-    "publishingInformation": {
-      "automaticDistribution": {
-        "isActive": false
-      },
-      "category": "KNOWLEDGE_AND_TRIVIA",
-      "distributionCountries": [],
-      "distributionMode": "PUBLIC",
-      "isAvailableWorldwide": true,
-      "locales": {
-        "en-US": {
-          "description": "Sample Full Description",
-          "examplePhrases": [
-            "Alexa open hello world",
-            "hello",
-            "help"
-          ],
-          "keywords": [],
-          "name": "WNEK",
-          "summary": "Sample Short Description"
-        }
-      },
-      "testingInstructions": "Sample Testing Instructions."
     }
   }
 }

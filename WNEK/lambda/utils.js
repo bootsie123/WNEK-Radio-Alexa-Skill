@@ -1,7 +1,7 @@
-exports.playRadio = response => {
+exports.playRadio = (response, url, logo) => {
     return response
-        .withStandardCard("WNEK Radio", "You are listneing to WNEK Radio", LOGO, LOGO)
-        .addAudioPlayerPlayDirective("REPLACE_ALL", URL, URL, 0)
+        .withStandardCard("WNEK Radio", "You are listneing to WNEK Radio", logo, logo)
+        .addAudioPlayerPlayDirective("REPLACE_ALL", url, url, 0)
         .withShouldEndSession(true)
         .getResponse();
 };

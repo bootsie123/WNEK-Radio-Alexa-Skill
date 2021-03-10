@@ -22,9 +22,11 @@ const PlayAudioIntentHandler = {
   handle(handlerInput) {
       const response = handlerInput.responseBuilder;
 
-      response.speak("Playing WNEK radio");
+      response.speak("Playing W N E K the voice from Western New England University");
+      
+      console
 
-      return utils.playRadio(response);
+      return utils.playRadio(response, URL, LOGO);
   }
 };
 
@@ -44,7 +46,7 @@ const ResumeIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === "AMAZON.ResumeIntent";
     },
     handle(handlerInput) {
-        return utils.playRadio(handlerInput.responseBuilder);
+        return utils.playRadio(handlerInput.responseBuilder, URL, LOGO);
     }
 }
 
