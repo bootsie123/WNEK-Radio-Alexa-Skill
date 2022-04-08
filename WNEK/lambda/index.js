@@ -2,7 +2,7 @@ const Alexa = require("ask-sdk-core");
 
 const utils = require("./utils");
 
-const URL = "https://backbonenetworks.streamguys1.com/western.mp3";
+const URL = "https://s5.radio.co/sd888e4cbb/listen";
 const LOGO = "https://western.backbonehub.com/western/images/western.jpg";
 
 const LaunchRequestHandler = {
